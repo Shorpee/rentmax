@@ -52,7 +52,7 @@
             </li>
           </ul>
 
-          <button class="rounded-pill py-2 px-4"><i class="fa fa-plus" aria-hidden="true">New Property</i></button>
+          <button class="rounded-pill shadow py-2 px-5"><i class="fa fa-plus" aria-hidden="true">New Property</i></button>
       </section>
 
   </nav>
