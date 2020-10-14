@@ -7,7 +7,7 @@
             class="fa fa-search position-absolute fa-lg"
             aria-hidden="true"
           ></i>
-          <input class="form-control" type="text" placeholder="Search" />
+          <input class="form-control rounded-pill" type="text" placeholder="Search" />
         </form>
         <div class="d-flex align-items-center">
           <i class="fa fa-envelope fa-lg mr-3"
@@ -26,9 +26,9 @@
         </div>
       </section>
     
-      <section class="navbar shadow-sm navbar-expand-lg navbar-light bg-light">
+      <section class="navbar shadow-sm navbar-expand-lg navbar-light bg-light d-flex align-items-center justify-content-between">
        
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#"><i class="fa fa-th-large" aria-hidden="true"></i>Home</a>
             </li>
@@ -51,8 +51,7 @@
               <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
             </li>
           </ul>
-
-          <button class="rounded-pill shadow py-2 px-5"><i class="fa fa-plus" aria-hidden="true">New Property</i></button>
+          <button class="rounded-pill shadow py-2 px-5"><i class="fa fa-plus" aria-hidden="true"></i>New Property</button>
       </section>
 
   </nav>
@@ -70,9 +69,12 @@ export default {
   background-color: #171523 !important;
 }
 
-/* .navbar-light {
-    padding-bottom: 20px;
-} */
+.navbar-dark input {
+  width: 23em !important;
+  font-weight: 500;
+  padding-left: 40px;
+  outline: none;
+}
 
 .form-control {
   font-family: "Montserrat", sans-serif;
@@ -81,17 +83,16 @@ export default {
   width: 400px;
 }
 
-.navbar input {
-  width: 23em !important;
-  border-radius: 20px;
-  font-weight: 500;
+.navbar-light {
+    padding-right: auto;
+    padding-left: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .nav-item {
     font-weight: 500;
-    /* margin-right: 20px;
-    padding-top: 10px; */
-    padding-bottom: 10px;
+    margin-right: 10px;
     position: relative;
 }
 
@@ -99,12 +100,19 @@ export default {
     content: "";
     display: block;
     margin: 0 auto;
-    width: 100%;
     position: absolute;
-    bottom: 0;
-    /* padding-top: 10px; This creates some space between the element and the border. */
-    border-bottom: 3px solid #14A24D;
+    width: 100%;
+    bottom: -10px;
+    height: 3px;
+    background: #14A24D;
 }
+
+.nav-item:hover i{
+  color:#14A24D;
+}
+
+
+
 
 .nav-link > .fa {
   color: #CFCFCF;
@@ -115,18 +123,9 @@ export default {
     font-size: 40px;
 }
 
-/* .nav-link > .fas {
-  color: #CFCFCF;
-  margin-right: 10px;
-} */
-
-nav-link  .fa:hover {
-  color: #14A24D;
-}
 
 .fa {
-  color: #fff;
-  /* font-size: 20px; */
+  color: #ffffff;
 }
 
 .fa-search {
@@ -166,5 +165,18 @@ p {
   font-weight: 500;
   font-size: 14px;
   color: #ffffff;
+}
+
+button {
+  background: #0F7638;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+.fa-plus {
+  margin-right: 20px;
 }
 </style>
